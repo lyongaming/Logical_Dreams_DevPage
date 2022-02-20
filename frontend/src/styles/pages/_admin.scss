@@ -1,0 +1,38 @@
+.admin__pages {
+    background-color: lighten($color: $secondary, $amount: 20);
+    min-height: 100vh;
+}
+
+.hexagon__grid {
+    position: fixed;
+    overflow: hidden;
+}
+
+.row{
+    display: inline-flex;
+    margin-left: -50px;
+    margin-top: -32px;
+    overflow: hidden;
+}
+
+.row:nth-child(even){
+    margin-left: 1px;
+}
+
+.hexagon{
+    position: relative;
+    height: 110px;
+    width: 100px;
+    background: $primary;
+    margin: 1px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.hexagon:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+}
