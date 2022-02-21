@@ -1,3 +1,3 @@
 @mixin width($width: 0px) {
-    width: calc($sidebar_width + $width);
+    width: $sidebar_width + $width;
 }

@@ -7,19 +7,23 @@ import { NakamasAdminScreen } from '../components/admin/NakamasAdminScreen';
 
 export const AdminRoutes = () => {
   return (
-
-    <div className="admin__pages">
+    
+    <>
       <HexagonGrid />
 
-      <Sidebar />
+      <div className="admin__pages">
 
-      <main className="admin__main">
-          <Routes>
-              <Route path="nakamas" element={ <NakamasAdminScreen /> } />
-          </Routes>
-      </main>
+        <Sidebar />
 
-    </div>
+        <div className="main__container">
+          <main className="admin__main">
+              <Routes>
+                  <Route path="nakamas" element={ <NakamasAdminScreen /> } />
+              </Routes>
+          </main>
+        </div>
 
+      </div>
+    </>
   );
 }

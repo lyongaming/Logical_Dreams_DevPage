@@ -1,4 +1,12 @@
-.admin__main {
-    width: 100vw;
+.main__container {
+    width: 65vw;
     height: 100vh;
+    z-index: 10;
+    position: relative;
+    right: 5%;
+    float: right;
+}
+
+.admin__main {
+    background-color: red;
 }
