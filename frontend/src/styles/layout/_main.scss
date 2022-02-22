@@ -2,11 +2,13 @@
     width: 65vw;
     height: 100vh;
     z-index: 10;
-    position: relative;
-    right: 5%;
-    float: right;
+    flex: 1 1 70%;
 }
 
 .admin__main {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    margin-top: 5%;
 }

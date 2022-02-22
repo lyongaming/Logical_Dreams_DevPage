@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+import { SearchBar } from "../ui/SearchBar";
 
 export const NakamasAdminScreen = () => {
   return (
-    <p>dkjasdlkasjd</p>
+    <>
+      <SearchBar />
+
+      <p style={ { backgroundColor: "red" } }>Mardito CSS.jpg</p>
+    </>
   )
 }

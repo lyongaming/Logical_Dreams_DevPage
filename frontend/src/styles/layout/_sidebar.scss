@@ -2,7 +2,7 @@
     @include width($width: 70px);
     height: 100vh;
     z-index: 10;
-    position: absolute;
+    flex: 1 1 10%;
     
     .admin__sidebar {
         background-color: darken($color: $secondary, $amount: 5);
@@ -13,6 +13,7 @@
         flex-direction: column;
         border-radius: 30px;
         height: 90vh;
+        margin-right: 10px;
         padding-left: 10px;
         padding-right: 10px;
         width: $sidebar_width + 40px;
